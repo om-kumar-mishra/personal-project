@@ -1,0 +1,158 @@
+.table-scroll,
+.table-header-scroll,
+.table-multi-col-scroll,
+.simple-table-scroll {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  margin: auto;
+  overflow: auto;
+}
+
+.table-scroll table,
+.table-header-scroll table,
+.table-multi-col-scroll table,
+.simple-table-scroll table {
+  width: 100%;
+  margin: auto;
+  border-collapse: separate;
+  border-spacing: 0 5px;
+}
+
+.table-scroll th,
+.table-scroll td,
+.table-multi-col-scroll th,
+.table-multi-col-scroll td {
+  border: 1px solid #d0cdcd;
+  vertical-align: top;
+}
+
+.table-scroll th,
+.table-scroll td,
+.table-header-scroll th,
+.table-header-scroll td,
+.table-multi-col-scroll th,
+.table-multi-col-scroll td {
+  min-width: 130px;
+}
+
+.table-multi-col-scroll th,
+.table-multi-col-scroll td {
+  max-width: 130px;
+}
+
+.table-scroll thead th,
+.table-header-scroll thead th,
+.table-multi-col-scroll thead tr:nth-child(1) th,
+.simple-table-scroll thead th {
+  background: #d8d8d8;
+  color: #000000;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.simple-table-scroll tbody th,
+.simple-table-scroll tbody td {
+  color: #707070;
+}
+
+.table-multi-col-scroll thead tr:nth-child(2) th {
+  background: #d8d8d8;
+  color: #000000;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 35px;
+}
+
+.table-scroll th:first-child,
+.table-multi-col-scroll th:nth-child(1) {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  background: #d8d8d8;
+}
+
+.table-multi-col-scroll th:nth-child(2) {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 130px;
+  z-index: 2;
+  background: #d8d8d8;
+}
+
+.table-multi-col-scroll th:nth-child(3) {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 260px;
+  z-index: 2;
+  background: #d8d8d8;
+}
+
+.table-scroll thead th:first-child,
+.table-multi-col-scroll thead th:nth-child(1),
+.table-multi-col-scroll thead th:nth-child(2),
+.table-multi-col-scroll thead th:nth-child(3) {
+  z-index: 5;
+}
+
+.above-header {
+  background-color: "black";
+  color: "white";
+  padding-left: "300px";
+  margin-left: "550px";
+  height: "30px";
+  font-size: "10px";
+  padding-top: "10px";
+}
+
+div::-webkit-scrollbar {
+  height: 7px;
+}
+
+div::-webkit-scrollbar-track {
+  border-radius: 0 !important;
+}
+
+div::-webkit-scrollbar-thumb {
+  background-color: #bbbaba !important;
+}
+
+.row-expand-icon {
+  padding: 0 4px;
+  margin-right: 2px;
+  cursor: pointer;
+}
+
+table.rounded-corners {
+  border-spacing: 0;
+  border-collapse: separate;
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 100%;
+}
+
+/* Apply a border to the right of all but the last column */
+table.rounded-corners td:not(:last-child) {
+  border-right: 1px solid black;
+  padding: 8px;
+  width: fit-content;
+}
+
+/* Apply a border to the bottom of all but the last row */
+table.rounded-corners > thead > tr:not(:last-child) > th,
+table.rounded-corners > thead > tr:not(:last-child) > td,
+table.rounded-corners > tbody > tr:not(:last-child) > th,
+table.rounded-corners > tbody > tr:not(:last-child) > td,
+table.rounded-corners > tfoot > tr:not(:last-child) > th,
+table.rounded-corners > tfoot > tr:not(:last-child) > td,
+table.rounded-corners > tr:not(:last-child) > td,
+table.rounded-corners > tr:not(:last-child) > th,
+table.rounded-corners > thead:not(:last-child),
+table.rounded-corners > tbody:not(:last-child),
+table.rounded-corners > tfoot:not(:last-child) {
+  border-bottom: 1px solid black;
+  padding: 8px;
+  min-width: 100px;
+}

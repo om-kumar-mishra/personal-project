@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: local("Poppins"), url(assets/fonts/Poppins-Regular.ttf) format("opentype");
+}
+.modalDropdownOverlay > .mantine-Modal-inner > section {
+  overflow: visible !important;
+}
+
+.modalDropdownOverlay > .mantine-Card-root > section {
+  overflow: visible !important;
+}
+
+.tab-btn-active-blue {
+  background-color: #081c54 !important;
+}
+.reset-btn-onhover:hover {
+  background-color: white;
+}
+.reset-btn-onhover {
+  color: #081c54 !important;
+}
+.svgColorWhite {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%) !important;
+}
+.svgColorGray {
+  filter: invert(51%) sepia(0%) saturate(49%) hue-rotate(183deg) brightness(99%) contrast(97%);
+}
+.fileUpload-onhover:hover {
+  background-color: lightgrey;
+}
+.icon-size {
+  width: "20px" !important;
+  height: "20px" !important;
+}
+.filter-green {
+  filter: invert(63%) sepia(89%) saturate(3222%) hue-rotate(84deg) brightness(97%) contrast(96%);
+}
+.filter-blue {
+  filter: invert(27%) sepia(93%) saturate(1106%) hue-rotate(194deg) brightness(103%) contrast(88%);
+}
+.filter-red {
+  filter: invert(23%) sepia(81%) saturate(7469%) hue-rotate(357deg) brightness(99%) contrast(95%);
+}
+.filter-white {
+  filter: invert(100%) sepia(2%) saturate(567%) hue-rotate(324deg) brightness(117%) contrast(100%);
+}
+.filter-dark-blue {
+  filter: invert(10%) sepia(40%) saturate(4427%) hue-rotate(210deg) brightness(93%) contrast(107%);
+}
+.landing-page-btn {
+  font-size: 20px;
+}
+.landing-page-btn:hover {
+  background-color: #e6e6e6 !important;
+}

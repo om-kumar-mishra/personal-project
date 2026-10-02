@@ -1,0 +1,15 @@
+step
+1.pip install django
+2.python -m django startproject myproject
+3.cd myproject
+4.python manage.py runserver
+5.python manage.py startapp myapp
+6.python manage.py makemigrations
+7.python manage.py migrate
+
+
+//git project
+python -m venv venv
+venv\Scripts\activate 
+pip install -r requirements.txt
+pip install django

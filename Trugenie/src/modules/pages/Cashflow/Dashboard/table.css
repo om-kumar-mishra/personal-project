@@ -1,0 +1,77 @@
+.table-border {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 0.7rem;
+}
+.table-heading {
+  font-weight: 700;
+  font-size: 15px;
+  padding-left: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+div::-webkit-scrollbar {
+  height: 7px;
+}
+
+.table-Cashflow-col-scroll {
+  overflow: auto;
+}
+
+.table-Cashflow-col-scroll th,
+.table-Cashflow-col-scroll td {
+  vertical-align: top;
+  min-width: 130px;
+  max-width: 130px;
+}
+
+.table-Cashflow-col-scroll th:nth-child(1),
+.table-Cashflow-col-scroll td:nth-child(1) {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  min-width: 220px;
+  max-width: 220px;
+}
+.table-Cashflow-col-scroll th:nth-child(2),
+.table-Cashflow-col-scroll td:nth-child(2) {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 220px;
+  z-index: 2;
+}
+.gap th:nth-child(1),
+.gap td:nth-child(1),
+.gap th:nth-child(4),
+.gap td:nth-child(4) {
+  border-right: 10px solid white;
+}
+.table-Cashflow-col-scroll th:nth-child(3),
+.table-Cashflow-col-scroll td:nth-child(3) {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 350px;
+  z-index: 2;
+}
+.table-Cashflow-col-scroll th:nth-child(4),
+.table-Cashflow-col-scroll td:nth-child(4) {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 480px;
+  z-index: 2;
+}
+
+.table-Cashflow-col-scroll thead th:nth-child(1),
+.table-Cashflow-col-scroll thead th:nth-child(2),
+.table-Cashflow-col-scroll thead th:nth-child(3) {
+  z-index: 5;
+}
+.black {
+  background-color: black;
+  color: white;
+}
+.white {
+  background-color: white;
+  color: red;
+}

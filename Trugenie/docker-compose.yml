@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+  dragon-frontend-rc-test:
+    container_name: dragon-frontend-rc-test
+    image: dragon-frontend-rc-test
+    pull_policy: never
+    ports:
+      - 3004:3000
+    networks:
+      - trugenie_qa
+    restart: unless-stopped
+
+networks:
+  trugenie_qa:
+    name: trugenie_qa
+  

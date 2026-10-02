@@ -1,0 +1,1 @@
+export const defaultIconSize = { height: "20px", width: "20px" };

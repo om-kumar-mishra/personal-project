@@ -1,0 +1,40 @@
+.custom-tooltip {
+  width: 100%;
+  background-color: #373b38;
+  padding: 5px;
+  border-radius: 2px;
+  color: #fff;
+}
+.tooltip-header {
+  font-weight: 700;
+  border-bottom: #fff 1px solid;
+  margin-bottom: 2px;
+  color: #ffffff;
+  font-size: 11px;
+}
+.tooltip-label,
+.tooltip-value {
+  font-weight: 500;
+  color: #eaeaea;
+  font-size: 11px;
+}
+
+.recharts-legend-item-text {
+  color: #222121 !important;
+}
+
+.recharts-rectangle {
+  cursor: pointer;
+}
+
+.recharts-surface {
+  margin-top: -3px !important;
+}
+
+.recharts-default-legend li svg {
+  width: 10px;
+}
+
+.recharts-legend-item-text {
+  color: #373b38 !important;
+}

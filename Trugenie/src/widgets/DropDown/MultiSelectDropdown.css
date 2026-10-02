@@ -1,0 +1,47 @@
+.dropdown-container-group {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+  text-align: left;
+  position: absolute;
+  z-index: 10;
+  width: 25%;
+  background-color: #fff;
+  font-size: 12px;
+}
+
+.CheckboxList {
+  margin: 0;
+  padding-left: 10px;
+  color: #333;
+  background-color: #fff;
+  max-height: 170px;
+  overflow-y: auto;
+  padding-top: 6px;
+}
+
+.ul-list {
+  padding-left: 4px;
+  color: #333;
+  background-color: #fff;
+}
+
+.multi-select-dropdown-search{
+  width: 100%;
+  padding: 10px;
+  font-weight: 600;
+  border-radius: 0px !important;
+  margin: 0 !important;
+  border: none !important;
+  margin-top: 1px !important;
+  border-bottom: 1px solid #ccc !important;
+  background-color: #f7f5f5;
+}
+
+.multi-select-dropdown-search:focus{
+  outline: none;
+}
+
+.list-item-padding{
+  padding: 0px 0px 10px 0px;
+}

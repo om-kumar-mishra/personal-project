@@ -1,0 +1,88 @@
+# Pipeline code for Trugenie Frontend - dragon/dev
+trigger:
+- none
+
+pool: Devops-Selfhosted
+variables:
+  tag: "$(Build.BuildId)"
+
+stages:
+  - stage: Build
+    displayName: Build image
+    jobs:
+      - job: Build
+        displayName: Build
+        steps:
+          - task: Bash@3
+            inputs:
+              targetType: 'inline'
+              script: |
+                pwd
+                ls -a
+            displayName: "Environment Check"
+
+          - task: DownloadSecureFile@1
+            name: envFile
+            inputs:
+              secureFile: '.dragon-frontend-internal.env'
+          - task: CopyFiles@2
+            inputs:
+              SourceFolder: '$(Agent.TempDirectory)'
+              Contents: '.dragon-frontend-internal.env'
+              TargetFolder: '$(Build.Repository.LocalPath)'
+          - task: Bash@3
+            inputs:
+              targetType: 'inline'
+              script: 'sudo mv .dragon-frontend-internal.env .env'
+          - task: npmAuthenticate@0
+            inputs:
+              workingFile: '.npmrc'
+            displayName: "Authenticate"
+          - task: NodeTool@0 
+            inputs: 
+              versionSpec: '16.17.1' 
+            displayName: 'Install Node.js'
+
+          - task: Npm@1
+            inputs:
+              command: 'install'  
+            displayName: "npm install"
+          - task: Npm@1
+            inputs:
+              command: 'custom'
+              customCommand: 'list'
+            displayName: "npm list"
+          - task: Npm@1
+            inputs:
+              command: 'custom'
+              customCommand: 'run build:test'
+            displayName: "npm run build"
+          - task: Bash@3
+            inputs:
+              targetType: 'inline'
+              script: |
+                pwd
+                ls -a
+            displayName: "Environment Check"
+          - task: Bash@3
+            inputs:
+              targetType: 'inline'
+              script: 'sudo docker build . -t dragon-frontend-rc-test'
+          - task: Bash@3 
+            inputs:
+              targetType: 'inline'  
+              script: 'docker save --output dragon-frontend-rc-test.tar dragon-frontend-rc-test'
+            displayName: "Build Image"
+          - task: CopyFiles@1
+            inputs:
+              Contents: |
+                docker-compose.yml
+                dragon-frontend-rc-test.tar
+              TargetFolder: '$(Build.StagingDirectory)'
+              OverWrite: true
+
+          - task: PublishBuildArtifacts@1
+            inputs:
+              PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+              ArtifactName: 'dragon-frontend-internal-build'
+              publishLocation: 'Container'

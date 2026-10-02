@@ -1,0 +1,89 @@
+.text-color {
+  font-size: smaller;
+  color: black;
+}
+
+.table-border {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 15px;
+  margin: 0.7rem;
+  /* padding: 0.75em; */
+}
+
+.table-scrollbar {
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.table-scrollbar::-webkit-scrollbar {
+  height: 3px !important;
+}
+
+.table-Portfolio-col-scroll th,
+.table-Portfolio-col-scroll td {
+  vertical-align: top;
+  min-width: 90px !important;
+  max-width: 90px !important;
+}
+
+.table-sales-performace th,
+.table-sales-performace td {
+  min-width: 100px !important;
+  max-width: 100px !important;
+}
+
+.table-Portfolio-col-scroll th:nth-child(1),
+.table-Portfolio-col-scroll td:nth-child(1) {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  min-width: 80px !important;
+  max-width: 80px !important;
+}
+.gap th:nth-child(2),
+.gap td:nth-child(2) {
+  margin-left: 10px;
+}
+.table-Portfolio-col-scroll th:nth-child(2),
+.table-Portfolio-col-scroll td:nth-child(2) {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 80px;
+  z-index: 2;
+  min-width: 80px !important;
+  max-width: 80px !important;
+}
+.table-Portfolio-col-scroll th:nth-child(3),
+.table-Portfolio-col-scroll td:nth-child(3) {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 160px;
+  z-index: 2;
+}
+/* .table-Portfolio-col-scroll th:nth-child(4),
+.table-Portfolio-col-scroll td:nth-child(4) {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 340px;
+  z-index: 2;
+}
+.table-Portfolio-col-scroll th:nth-child(5),
+.table-Portfolio-col-scroll td:nth-child(5) {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 470px;
+  z-index: 2;
+} */
+/* .table-Portfolio-col-scroll th:nth-child(6),
+.table-Portfolio-col-scroll td:nth-child(6) {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 600px;
+  z-index: 2;
+} */
+.table-Portfolio-col-scroll thead th:nth-child(1),
+.table-Portfolio-col-scroll thead th:nth-child(2),
+.table-Portfolio-col-scroll thead th:nth-child(3) {
+  z-index: 5;
+}

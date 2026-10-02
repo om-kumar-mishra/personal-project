@@ -1,0 +1,35 @@
+//#region [User Login]
+export const LOGIN_REQUESTED = "LOGIN_REQUESTED";
+export const LOGIN_SUCCEEDED = "LOGIN_SUCCEEDED";
+export const LOGIN_FAILED = "LOGIN_FAILED";
+//#endregion
+
+//#region [User Logout]
+export const LOGOUT_REQUESTED = "LOGOUT_REQUESTED";
+//#endregion
+
+//#region [User Permissions]
+export const PERMISSIONS_REQUESTED = "PERMISSIONS_REQUESTED";
+export const PERMISSIONS_SUCCEEDED = "PERMISSIONS_SUCCEEDED";
+export const PERMISSIONS_FAILED = "PERMISSIONS_FAILED";
+//#endregion
+
+//#region [App version]
+export const APP_VERSION_REQUESTED = "APP_VERSION_REQUESTED";
+export const APP_VERSION_SUCCEEDED = "APP_VERSION_SUCCEEDED";
+export const APP_VERSION_FAILED = "APP_VERSION_FAILED";
+//#endregion [App version]
+
+//#region [Refresh token]
+export const REFRESH_TOKEN_REQUESTED = "REFRESH_TOKEN_REQUESTED";
+export const REFRESH_TOKEN_SUCCEEDED = "REFRESH_TOKEN_SUCCEEDED";
+export const REFRESH_TOKEN_FAILED = "REFRESH_TOKEN_FAILED";
+//#endregion [Refresh token]
+
+export const SET_LOGOUT_TIMER = "SET_LOGOUT_TIMER";
+export const RESET_LOGOUT_TIMER = "RESET_LOGOUT_TIMER";
+export const SETTINGS_ACTIVE_MENUITEM = "SETTINGS_ACTIVE_MENUITEM";
+export const SETTINGS_ACTIVE_SUB_MENUITEM = "SETTINGS_ACTIVE_SUB_MENUITEM";
+
+export const SET_ACTIVITY_TIMESTAMP = "SET_ACTIVITY_TIMESTAMP";
+export const RESET_ACTIVITY_TIMESTAMP = "RESET_ACTIVITY_TIMESTAMP";

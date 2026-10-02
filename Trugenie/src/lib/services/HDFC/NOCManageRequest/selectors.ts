@@ -1,0 +1,22 @@
+import { AppState } from "../../../common/appState";
+
+export const selectManageRequestLoaders = (state: AppState) => state.hdfc.manageRequest.loaders;
+export const selectedApprovedNOCList = (state: AppState) => state.hdfc.manageRequest.approvedNOCList;
+export const selectedCancelledNOCList = (state: AppState) => state.hdfc.manageRequest.cancelledNOCList;
+export const selectedPendingNOCList = (state: AppState) => state.hdfc.manageRequest.pendingNOCList;
+export const selectedRejectedNOCList = (state: AppState) => state.hdfc.manageRequest.rejectedNOCList;
+export const selectedHoldNOCList = (state: AppState) => state.hdfc.manageRequest.holdNOCList;
+export const selectedNOCProjectDetails = (state: AppState) => state.hdfc.manageRequest.nocProjectDetails;
+export const selectedNocPaymentDetails = (state: AppState) => state.hdfc.manageRequest.nocPaymentDetails;
+export const selectedNocRemarksData = (state: AppState) => state.hdfc.manageRequest.nocRemarksData;
+export const selectedNocDocumentsData = (state: AppState) => state.hdfc.manageRequest.nocDocumentsData;
+export const selectedNocDecisionData = (state: AppState) => state.hdfc.manageRequest.decisionGetData;
+export const selectedNocPriceHeadersData = (state: AppState) => state.hdfc.manageRequest.nocPriceHeaders;
+export const selectedNocSendBackUsersData = (state: AppState) => state.hdfc.manageRequest.sendBackUsers;
+export const selectedAuthorizeNocData = (state: AppState) => state.hdfc.manageRequest.authorizeNoc;
+export const selectedAuthorizeNocDataNew = (state: AppState) => state.hdfc.manageRequest.authorizeNocNew;
+export const selectedNocRequestRemarksData = (state: AppState) => state.hdfc.manageRequest.nocRequestRemarks;
+export const selectedNocRequestTimelineData = (state: AppState) => state.hdfc.manageRequest.nocRequestTimeline;
+export const selectedNocRequestChangeHistoryData = (state: AppState) => state.hdfc.manageRequest.nocRequestChangeHistory;
+export const selectedNocDeveloperDocRefData = (state: AppState) => state.hdfc.manageRequest.nocDeveloperDocRef;
+export const selectedNocProjectDetailsData = (state: AppState) => state.hdfc.manageRequest.getNOCProjectDetails;
